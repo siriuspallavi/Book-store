@@ -3,7 +3,7 @@ pipeline {
        label 'slave1'
      }
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockeruser')
+        DOCKERHUB_CREDENTIALS = credentials('docker')
         registry = "siriuspallavi/book-store"
     }
     stages{
